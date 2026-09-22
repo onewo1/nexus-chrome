@@ -89,7 +89,7 @@ jobs:
         with:
           name: Nexus Chrome ${{ steps.extract.outputs.tag }}
           body: ${{ steps.extract.outputs.notes }}
-          generate_release_notes: false
+          generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
